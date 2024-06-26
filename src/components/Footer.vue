@@ -1,10 +1,11 @@
 <template>
   <footer class="container-fluid">
     <div class="row">
-        <p class="lead">Yakupha's portfolio &copy;</p>
+        <p class="lead">Yakupha's portfolio &copy;
         <span class="shadow">
             {{ cYear }}
         </span>
+    </p>
     </div>
 
   </footer>
