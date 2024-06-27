@@ -8,7 +8,7 @@
         <div class="col">
             <div id="details">
                 <h1 class="display-1">Yakupha Ntonintshi</h1>
-                <p v-if="title"> I am <span class="span">{{ title }}</span>
+                <p v-if="title"> I am a<span class="span">{{ title }}</span>
                 </p>
                 <Spinner v-else/>
             </div>
@@ -58,8 +58,7 @@ span {
 img{
     border-radius: 8px solid brown;
 }
-/* .container{
-    background-image: linear-gradient(to right ,rgb(167, 89, 47), beige);
-} */
-
+p{
+    font-size: 2rem;
+}
 </style>
