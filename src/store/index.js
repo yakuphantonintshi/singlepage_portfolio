@@ -66,7 +66,7 @@ export default createStore({
         })
       }
     },
-    async fetcEducation(context){
+    async fetchEducation(context){
       try{
         let {education} = await (await axios.get(portfolioURL)).data
         context.commit("setEducation", education)
