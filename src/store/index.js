@@ -52,84 +52,84 @@ export default createStore({
           timer: 2000
         })
       }
-    }
-  },
-  async fetchAbout(context){
-    try{
-      let {about} = await (await axios.get(portfolioURL)).data
-      context.commit("setAbout", about)
-    } catch(e){
-      Swal.fire({
-        title: "Error",
-        text: "Failed to fetch about data",
-        icon: "error",
-        timer: 2000
-      })
-    }
-  },
-  async fetcEducation(context){
-    try{
-      let {education} = await (await axios.get(portfolioURL)).data
-      context.commit("setEducation", education)
-    } catch(e){
-      Swal.fire({
-        title: "Error",
-        text: "Failed to fetch education data",
-        icon: "error",
-        timer: 2000
-      })
-    }
-  },
-  async fetchExperiences(context){
-    try{
-      let {experiences} = await (await axios.get(portfolioURL)).data
-      context.commit("setExperiences", experiences)
-    } catch(e){
-      Swal.fire({
-        title: "Error",
-        text: "Failed to fetch data experience",
-        icon: "error",
-        timer: 2000
-      })
-    }
-  },
-  async fetchSkills(context){
-    try{
-      let {skills} = await (await axios.get(portfolioURL)).data
-      context.commit("setSkills", skills)
-    } catch(e){
-      Swal.fire({
-        title: "Error",
-        text: "Failed to fetch the skill data",
-        icon: "error",
-        timer: 2000
-      })
-    }
-  },
-  async fetchTestimonials(context){
-    try{
-      let {testimonials} = await (await axios.get(portfolioURL)).data
-      context.commit("setTestimonials", testimonials)
-    } catch(e){
-      Swal.fire({
-        title: "Error",
-        text: "Failed to fetch testimonial data",
-        icon: "error",
-        timer: 2000
-      })
-    }
-  },
-  async fetchProjects(context){
-    try{
-      let {projects} = await (await axios.get(portfolioURL)).data
-      context.commit("setProjects", projects)
-    } catch(e){
-      Swal.fire({
-        title: "Error",
-        text: "Failed to fetch project data",
-        icon: "error",
-        timer: 2000
-      })
+    },
+    async fetchAbout(context){
+      try{
+        let {about} = await (await axios.get(portfolioURL)).data
+        context.commit("setAbout", about)
+      } catch(e){
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch about data",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async fetcEducation(context){
+      try{
+        let {education} = await (await axios.get(portfolioURL)).data
+        context.commit("setEducation", education)
+      } catch(e){
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch education data",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async fetchExperiences(context){
+      try{
+        let {experiences} = await (await axios.get(portfolioURL)).data
+        context.commit("setExperiences", experiences)
+      } catch(e){
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch data experience",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async fetchSkills(context){
+      try{
+        let {skills} = await (await axios.get(portfolioURL)).data
+        context.commit("setSkills", skills)
+      } catch(e){
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch the skill data",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async fetchTestimonials(context){
+      try{
+        let {testimonials} = await (await axios.get(portfolioURL)).data
+        context.commit("setTestimonials", testimonials)
+      } catch(e){
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch testimonial data",
+          icon: "error",
+          timer: 2000
+        })
+      }
+    },
+    async fetchProjects(context){
+      try{
+        let {projects} = await (await axios.get(portfolioURL)).data
+        context.commit("setProjects", projects)
+      } catch(e){
+        Swal.fire({
+          title: "Error",
+          text: "Failed to fetch project data",
+          icon: "error",
+          timer: 2000
+        })
+      }
     }
   },
   modules: {

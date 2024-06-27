@@ -55,8 +55,8 @@ span {
 .span{
     font-size: 3rem;
 }
-template{
-    background-image: linear-gradient(to right ,rgb(167, 89, 47), beige);
+img{
+    border-radius: 8px solid brown;
 }
 /* .container{
     background-image: linear-gradient(to right ,rgb(167, 89, 47), beige);

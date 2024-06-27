@@ -6,10 +6,12 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
+    background-image: linear-gradient(to right, rgba(179, 121, 27, 0.922), beige);
   }
   
   nav {
     padding: 30px;
+    background-color: rgba(236, 193, 86, 0.714);
   }
   
   nav a {
